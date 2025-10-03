@@ -7,6 +7,6 @@ module "storage" {
   source              = "../../Modules/Storage"
   depends_on          = [module.rg]
   account_name        = "Prod-1stg"
-  resource_group_name = module.rg.resource_group_name
-  location            = module.rg.location
+  resource_group_name = "Prod-1"
+  location            = "West Europe"
 }
