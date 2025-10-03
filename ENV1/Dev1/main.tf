@@ -5,10 +5,10 @@ module "rg" {
 }
 
 module "storage" {
-  source              = "../Modules/Storage"
-  depends_on          = [module.rg]
-  account_name        = "dev-1stg"
-  resource_group_name = module.rg.resource_group_name
-  location            = module.rg.location
+  source                  = "../Modules/Storage"
+  depends_on              = [module.rg]
+  storage_account_name    = "dev1stg"
+  resource_group_name     = "dev-1"
+  location                = "West Europe"
 }
 
