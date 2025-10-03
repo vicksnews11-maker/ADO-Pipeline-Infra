@@ -11,3 +11,4 @@ module "storage" {
   resource_group_name = module.rg.resource_group_name
   location            = module.rg.location
 }
+
